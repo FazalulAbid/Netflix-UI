@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Netflix UI Clone</string>
+
+    <!--    Welcome Screen-->
+    <string name="ready_to_watch">Ready to watch?</string>
+    <string name="close_button_for_bottom_sheet">Close button for bottom sheet</string>
+    <string name="enter_your_email_to_sign_in_or_create_account">Enter your email to create or sign in to your account.</string>
+    <string name="email">Email</string>
+    <string name="get_started">Get Started</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+</resources>
