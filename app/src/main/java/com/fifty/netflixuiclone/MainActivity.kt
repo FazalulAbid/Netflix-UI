@@ -12,7 +12,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
-import androidx.compose.material3.Button
+import androidx.compose.material3.*
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -36,6 +36,7 @@ import kotlinx.coroutines.launch
 @ExperimentalMaterialApi
 @ExperimentalPagerApi
 @ExperimentalAnimationApi
+@ExperimentalMaterial3Api
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -155,6 +156,7 @@ fun FullWidthButton(buttonText: String, onClick: () -> Unit) {
 }
 
 
+@ExperimentalMaterial3Api
 @ExperimentalMaterialApi
 @Composable
 fun BottomSheetContent(sheetState: BottomSheetState, context: Context) {
