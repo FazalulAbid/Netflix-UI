@@ -1,4 +1,4 @@
-package com.fifty.netflixuiclone
+package com.fifty.netflixuiclone.ui.screen.welcome
 
 import android.content.Context
 import android.content.Intent
@@ -12,8 +12,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
-import androidx.compose.material3.*
+import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
@@ -28,8 +29,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.fifty.netflixuiclone.R
+import com.fifty.netflixuiclone.ui.screen.dashboard.DashboardActivity
 import com.fifty.netflixuiclone.util.UiConstants
-import com.fifty.netflixuiclone.viewpager.OnBoardingScreen
+import com.fifty.netflixuiclone.ui.screen.welcome.viewpager.OnBoardingScreen
 import com.google.accompanist.pager.ExperimentalPagerApi
 import kotlinx.coroutines.launch
 
@@ -37,7 +40,7 @@ import kotlinx.coroutines.launch
 @ExperimentalPagerApi
 @ExperimentalAnimationApi
 @ExperimentalMaterial3Api
-class MainActivity : ComponentActivity() {
+class WelcomeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val context = this
@@ -126,7 +129,8 @@ fun TopAppBarWithPrivacyAndSignInButtons() {
                         color = Color.White
                     )
                     Button(colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.Transparent, contentColor = Color.Gray
+                        containerColor = Color.Transparent,
+                        contentColor = Color.Gray
                     ), onClick = {}) {
                         Image(
                             painter = painterResource(id = R.drawable.ic_menu_dots_vertical),

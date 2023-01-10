@@ -13,4 +13,16 @@
     <string name="tv_shows">TV Shows</string>
     <string name="movies">Movies</string>
     <string name="categories">Categories</string>
+    <string name="my_list">My List</string>
+    <string name="play">Play</string>
+    <string name="info">My Info</string>
+    <string name="released_in_the_past_year">Released in the past year</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="tense_dramas">Tense Dramas</string>
+    <string name="south_indian_cinema">South Indian cinemas</string>
+    <string name="top_ten_tv_show">TV Shows in India</string>
+    <string name="new_and_hot"><![CDATA[New & Hot]]></string>
+    <string name="avatar_desc">Jake Sully and Ney\'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora.</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="everyones_watching">Everyone\'s watching</string>
 </resources>

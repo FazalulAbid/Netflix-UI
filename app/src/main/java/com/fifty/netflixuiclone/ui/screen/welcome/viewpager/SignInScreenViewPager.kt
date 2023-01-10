@@ -1,4 +1,4 @@
-package com.fifty.netflixuiclone.viewpager
+package com.fifty.netflixuiclone.ui.screen.welcome.viewpager
 
 import androidx.annotation.DrawableRes
 import com.fifty.netflixuiclone.R

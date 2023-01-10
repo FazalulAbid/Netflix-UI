@@ -11,4 +11,5 @@
 <!--    Custom App colors-->
     <color name="text_gray">#777777</color>
     <color name="transparent_black">#57000000</color>
+    <color name="transparent_white">#ADFFFFFF</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.fifty.netflixuiclone.viewpager
+package com.fifty.netflixuiclone.ui.screen.welcome.viewpager
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
