@@ -43,7 +43,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun NewAndHotScreen() {
     Column() {
-        TopBar()
+        TopBar(stringResource(R.string.new_and_hot))
         Box(
             modifier = Modifier
                 .fillMaxSize()
@@ -129,7 +129,7 @@ fun NewAndHotScreen() {
 }
 
 @Composable
-fun TopBar() {
+fun TopBar(title:String) {
     Column {
         // Hiding App bar with netflix logo.
         Box(
@@ -147,7 +147,7 @@ fun TopBar() {
                         .align(Alignment.CenterVertically)
                 ) {
                     Text(
-                        text = stringResource(R.string.new_and_hot),
+                        text = title,
                         fontFamily = UiConstants.latoFontFamily,
                         fontSize = 22.sp,
                         fontWeight = FontWeight.Bold,

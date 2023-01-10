@@ -31,8 +31,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.fifty.netflixuiclone.R
 import com.fifty.netflixuiclone.ui.screen.dashboard.DashboardActivity
-import com.fifty.netflixuiclone.util.UiConstants
 import com.fifty.netflixuiclone.ui.screen.welcome.viewpager.OnBoardingScreen
+import com.fifty.netflixuiclone.util.UiConstants
 import com.google.accompanist.pager.ExperimentalPagerApi
 import kotlinx.coroutines.launch
 
@@ -73,7 +73,7 @@ class WelcomeActivity : ComponentActivity() {
                                 .weight(10f)
                                 .padding(16.dp)
                         ) {
-                            FullWidthButton(getString(R.string.get_started)) {
+                            FullWidthButton(getString(R.string.get_started), containerColor = Color.Red, contentColor = Color.White) {
                                 scope.launch {
                                     sheetState.expand()
                                 }
@@ -146,13 +146,18 @@ fun TopAppBarWithPrivacyAndSignInButtons() {
 
 @ExperimentalMaterialApi
 @Composable
-fun FullWidthButton(buttonText: String, onClick: () -> Unit) {
+fun FullWidthButton(
+    buttonText: String,
+    containerColor: Color,
+    contentColor: Color,
+    onClick: () -> Unit
+) {
     Button(
         modifier = Modifier
             .fillMaxWidth()
             .height(50.dp), onClick = onClick,
         shape = RoundedCornerShape(2.dp), colors = ButtonDefaults.buttonColors(
-            containerColor = Color.Red, contentColor = Color.White
+            containerColor = containerColor, contentColor = contentColor
         )
     ) {
         Text(text = buttonText)
@@ -233,7 +238,10 @@ fun BottomSheetContent(sheetState: BottomSheetState, context: Context) {
 
             // Get started Button on bottom sheet.
             Spacer(modifier = Modifier.height(30.dp))
-            FullWidthButton(buttonText = stringResource(R.string.get_started)) {
+            FullWidthButton(
+                buttonText = stringResource(R.string.get_started),
+                containerColor = Color.Red, contentColor = Color.White
+            ) {
                 context.startActivity(Intent(context, DashboardActivity::class.java))
             }
         }

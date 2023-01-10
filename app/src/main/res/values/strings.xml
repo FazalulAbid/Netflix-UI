@@ -25,4 +25,7 @@
     <string name="avatar_desc">Jake Sully and Ney\'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora.</string>
     <string name="coming_soon">Coming soon</string>
     <string name="everyones_watching">Everyone\'s watching</string>
+    <string name="downloads">Downloads</string>
+    <string name="smart_downloads">Smart Downloads</string>
+    <string name="downloads_description">We\'ll download a personalised selection of movies and shows for you, so there\'s always something to watch on your device.</string>
 </resources>
