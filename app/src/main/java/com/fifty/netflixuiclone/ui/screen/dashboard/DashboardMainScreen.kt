@@ -48,7 +48,6 @@ fun DashboardMainScreen() {
         Box(modifier = Modifier.padding(innerPadding)) {
             DashboardBottomNavGraph(
                 navController = navController)
-
         }
     }
 }

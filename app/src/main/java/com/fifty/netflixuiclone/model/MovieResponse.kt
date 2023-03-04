@@ -2,8 +2,8 @@ package com.fifty.netflixuiclone.model
 
 data class MovieResponse(
     val adult: Boolean,
-    val backdrop_path: Any,
-    val belongs_to_collection: Any,
+    val backdrop_path: String,
+    val belongs_to_collection: String,
     val budget: Int,
     val genres: List<Genre>,
     val homepage: String,
@@ -13,9 +13,9 @@ data class MovieResponse(
     val original_title: String,
     val overview: String,
     val popularity: Double,
-    val poster_path: Any,
-    val production_companies: List<Any>,
-    val production_countries: List<Any>,
+    val poster_path: String,
+    val production_companies: List<String>,
+    val production_countries: List<String>,
     val release_date: String,
     val revenue: Int,
     val runtime: Int,

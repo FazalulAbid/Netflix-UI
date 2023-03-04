@@ -5,6 +5,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
@@ -12,7 +13,6 @@ import com.fifty.netflixuiclone.NetflixApplication
 import com.fifty.netflixuiclone.model.MovieResponse
 import com.fifty.netflixuiclone.repository.MovieRepositoryImpl
 import com.fifty.netflixuiclone.util.Resource
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 import retrofit2.Response
 import java.io.IOException
