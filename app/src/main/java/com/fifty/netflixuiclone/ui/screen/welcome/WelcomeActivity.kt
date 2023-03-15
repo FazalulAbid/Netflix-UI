@@ -73,7 +73,11 @@ class WelcomeActivity : ComponentActivity() {
                                 .weight(10f)
                                 .padding(16.dp)
                         ) {
-                            FullWidthButton(getString(R.string.get_started), containerColor = Color.Red, contentColor = Color.White) {
+                            FullWidthButton(
+                                getString(R.string.get_started),
+                                containerColor = Color.Red,
+                                contentColor = Color.White
+                            ) {
                                 scope.launch {
                                     sheetState.expand()
                                 }
